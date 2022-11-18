@@ -9,19 +9,19 @@ int main()
 
 	for (int i = a; i <= b; i++)
 	{
-		int broj = i;
+		int num = i;
 
-		while (broj)
+		while (num)
 		{
-			int cifra = broj % 16;
-			if (cifra == 0xa)
+			int digit = num % 16;
+			if (digit == 0xA)
 			{
-				int kopija = i;
+				int tmp = i;
 				int flag = 0;
 
 				for (int j = 2; j <= i / 2; j++)
 				{
-					if (kopija % j == 0)
+					if (tmp % j == 0)
 						flag = 1;
 				}
 
@@ -29,7 +29,7 @@ int main()
 					printf("Number %d is a prime and has a 0xA digit.", i);
 			}
 
-			broj = broj / 16;
+			num = num / 16;
 		}
 	}
 
