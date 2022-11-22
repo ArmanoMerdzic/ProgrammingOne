@@ -1,4 +1,4 @@
-/* Program that calculates the sum based on the following example: 2234 = pow(2,1) + pow(2,2) + pow(3,3) + pow(4,4) */
+/* Program that calculates the sum based on the following example: 2234 = pow(2,4) + pow(2,3) + pow(3,2) + pow(4,1) */
 
 #include <stdio.h>
 
